@@ -65,6 +65,19 @@ Version: 1.0.0
 }
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Alegreya', serif;
+	font-weight: normal;
+}
+
+/*--------------------------------------------------------------
 # Universal
 --------------------------------------------------------------*/
 
@@ -88,5 +101,99 @@ img {
 }
 
 /*--------------------------------------------------------------
-# Universal
+# Header
 --------------------------------------------------------------*/
+
+/* Home Header */
+
+.home-landing {
+	background: url('img/YarnInBowl.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.home-landing-overlay {
+	background-color: rgba( 50, 50, 50, .7);
+	padding: 20px 40px;
+	height: 60vh;
+}
+
+.home-landing-logo-area {
+	clear: both;
+	padding: 8em 0;
+}
+
+.home-landing-logo {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+/* Navigation */
+
+.toggle-sidebar {
+	width: 30px;
+	float: right;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  padding-top: 30px;
+  transition: width 0.5s;
+  text-align: right;
+  max-width: 450px;
+	transition: all 1s;
+}
+
+#sidebar ul {
+	padding: 0;
+}
+
+/* The navigation menu links */
+#sidebar a {
+  padding: 8px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav li {
+  list-style: none;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+  position: relative;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+  z-index: 3000;
+  display: inline-block;
+  text-align: right;
+  color: #818181;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#sidebar {
+  padding: 0 20px 20px;
+  text-align: center;
+}
+
+.nav-up {
+  top: -80px;
+}
