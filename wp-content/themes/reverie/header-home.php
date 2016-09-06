@@ -26,7 +26,7 @@
 				        <h2>Menu</h2>
 				        <ul>
 				          <li><a href="">Home</a></li>
-				          <li><a href="">About Us</a></li>
+				          <li><a href="/about-us">About Us</a></li>
 				          <li><a href="">Melissa</a></li>
 				          <li><a href="">Alpacas</a></li>
 				          <li><a href="">Classes</a></li>
@@ -58,13 +58,13 @@
 					</script>
 				</div>
 
-				<div onclick="openNav()" class="toggle-sidebar"><img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu-white.svg"></div>
+				<div onclick="openNav()" class="toggle-sidebar"><img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu-white.svg" alt="hamburger icon"></div>
 
 			</header>
 
 			<div class="home-landing-logo-area">
 				<div class="home-landing-logo">
-					<img src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogoWhite.svg">
+					<img src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogoWhite.svg" alt="Reverie Logo">
 				</div>
 			</div>
 		</div>

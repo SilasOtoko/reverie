@@ -64,18 +64,6 @@ Version: 1.0.0
 	margin-right: auto;
 }
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-
-body {
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Alegreya', serif;
-	font-weight: normal;
-}
 
 /*--------------------------------------------------------------
 # Universal
@@ -101,8 +89,68 @@ img {
 }
 
 /*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+.fancy-underline {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	max-width: 60%;
+	margin: 0 auto 40px;
+}
+
+.fancy-underline .line,
+.fancy-underline img {
+	display: inline-block;
+	margin: 0 auto;
+}
+
+.line {
+	height: 1px;
+	width: 25%;
+	background-color: #D9D4CF;
+}
+
+.fancy-swirl {
+	width: 30%;
+}
+
+.button {
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-family: 'Alegreya', serif;
+	font-size: 1.625em;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
+	display: inline-block;
+}
+
+.button-blue {
+	background-color: #acd0ce;
+	color: #fff;
+}
+
+/*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+/* Regular Header */
+
+.main-header {
+	background-color: #fff;
+	padding: 20px 40px;
+}
+
+.header-logo {
+	float: left;
+	width: 200px;
+}
+
+.main-header .toggle-sidebar {
+	margin-top: 30px;
+}
 
 /* Home Header */
 
@@ -114,12 +162,11 @@ img {
 .home-landing-overlay {
 	background-color: rgba( 50, 50, 50, .7);
 	padding: 20px 40px;
-	height: 60vh;
 }
 
 .home-landing-logo-area {
 	clear: both;
-	padding: 8em 0;
+	padding: 4em 0;
 }
 
 .home-landing-logo {
@@ -132,6 +179,8 @@ img {
 .toggle-sidebar {
 	width: 30px;
 	float: right;
+	vertical-align: center;
+	margin-top: 10px;
 }
 
 /* The side navigation menu */
@@ -153,6 +202,7 @@ img {
 
 #sidebar ul {
 	padding: 0;
+	transition: all 1s;
 }
 
 /* The navigation menu links */
@@ -196,4 +246,340 @@ img {
 
 .nav-up {
   top: -80px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateX(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.fade-in {
+	animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	50% {
+		opacity: 0;
+		transform: translateX(40px);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.fade-out {
+	animation: fadeOut 1s ease-in-out;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+	background-color: #7c7877;
+	text-align: center;
+	padding: 40px 5%;
+	color: #fff;
+}
+
+footer h4 {
+	color: #fff;
+}
+
+footer a {
+	display: inline-block;
+	color: #fff;
+}
+
+footer h2 {
+	color: #fff;
+}
+
+footer ul {
+	padding-left: 0;
+}
+
+footer li {
+	list-style: none;
+	display: inline-block;
+}
+
+footer li a {
+	display: inline-block;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+footer .line {
+	display: block;
+	height: 1px;
+	background-color: #ccc;
+	width: 40%;
+	margin: 40px auto;
+}
+
+.footer-icon {
+	width: 30px;
+	height: 30px;
+	margin: 0 15px;
+}
+
+.footer-icon img {
+	border-radius: 5px;
+}
+
+.legal {
+	margin-top: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Main Content Area
+--------------------------------------------------------------*/
+
+.content-area main {
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 40px 5%;
+}
+
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+
+.home-main {
+	text-align: center;
+}
+
+.home-main h3 {
+	color: #959595;
+}
+
+.navigation-buttons {
+	margin-top: 40px;
+}
+
+.navigation-buttons .button {
+	margin: 10px;
+	padding: 60px 20px;
+	min-width: 300px;
+	transition: all 0.2s;
+}
+
+.navigation-buttons .button:hover {
+	-webkit-box-shadow: 0 37px 20px -20px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 37px 20px -20px rgba(0,0,0,0.2);
+	box-shadow: 0 37px 20px -20px rgba(0,0,0,0.2);
+  transform: translate(0, -10px);
+}
+
+.tagline {
+	font-style: italic;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: 80px 0;
+	padding: 20px 0;
+}
+
+.tagline h4 {
+	color: #959595;
+}
+
+/*--------------------------------------------------------------
+# About Us Page
+--------------------------------------------------------------*/
+
+#about-page .banner {
+	background-image: url('img/reverie-ladies.jpg');
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+}
+
+.page-title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+#about-page .page-title h3 {
+	color: #959595;
+}
+
+#about-page .main-content {
+	text-align: center;
+}
+
+.member {
+	margin-bottom: 80px;
+}
+
+.member-photo {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.member-photo img {
+	border-radius: 10px;
+}
+
+.member .fancy-swirl {
+	max-width: 100px;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Alegreya', serif;
+	font-weight: normal;
+	color: #666;
+	margin-top: 10px;
+}
+
+body {
+  font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
 }
