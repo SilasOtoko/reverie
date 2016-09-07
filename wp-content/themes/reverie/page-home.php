@@ -17,7 +17,7 @@
       <a class="button button-blue" href="">Products</a>
       <a class="button button-blue" href="">Classes</a>
       <a class="button button-blue" href="">Gallery</a>
-      <a class="button button-blue" href="">Meet Us</a>
+      <a class="button button-blue" href="/about-us">Meet Us</a>
     </div>
 
     <div class="tagline">

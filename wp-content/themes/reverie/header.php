@@ -15,7 +15,9 @@
 </head>
 <body>
   <header class="main-header clearfix">
-		<img class="header-logo" src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogo.svg" alt="Reverie Logo">
+		<a href="<?php bloginfo( 'url' ); ?>">
+			<img class="header-logo" src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogo.svg" alt="Reverie Logo">
+		</a>
 		<div id="mySidenav" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -29,7 +31,7 @@
 		          <li><a href="">Melissa</a></li>
 		          <li><a href="">Alpacas</a></li>
 		          <li><a href="">Classes</a></li>
-		          <li><a href="">Testimonies</a></li>
+		          <li><a href="/testimonials">Testimonies</a></li>
 		          <li><a href="">Products</a></li>
 		          <li><a href="">Gallery</a></li>
 		          <li><a href="">Blog</a></li>
