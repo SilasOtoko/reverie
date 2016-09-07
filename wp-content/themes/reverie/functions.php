@@ -31,7 +31,9 @@ function reverie_theme_styles(){
 }
 add_action( 'wp_enqueue_scripts', 'reverie_theme_styles' );
 
-function eh_theme_js(){
+function reverie_theme_js(){
+
+  wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/main.js', array('jquery'), '', true );
 
 }
 add_action('wp_enqueue_scripts', 'reverie_theme_js' );

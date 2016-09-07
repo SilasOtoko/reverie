@@ -30,7 +30,7 @@
 				          <li><a href="">Melissa</a></li>
 				          <li><a href="">Alpacas</a></li>
 				          <li><a href="">Classes</a></li>
-				          <li><a href="">Testimonies</a></li>
+				          <li><a href="">Testimonials</a></li>
 				          <li><a href="">Products</a></li>
 				          <li><a href="">Gallery</a></li>
 				          <li><a href="">Blog</a></li>
