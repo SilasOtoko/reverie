@@ -1,5 +1,13 @@
 <?php get_header( 'home' ); ?>
 
+<div class="subscribe">
+  <div class="main-wrapper clearfix">
+    <h3>Sign up for our newsletter!</h3>
+    <input type="email" placeholder="Email Address">
+    <input type="submit" value="Subscribe">
+  </div>
+</div>
+
 <div class="content-area">
   <main class="home-main">
 
@@ -25,7 +33,36 @@
       <h4>To daydream. A time to sit, ponder, create, and gather wool. We are a shop of dreams.</h4>
     </div>
 
-    <p>Rêverie is a yarn, décor & gifts shop located in the heart of the vibrant arts community of downtown Goshen. We also offer classes for those who want to learn!</p>
+    <div class="featured-products">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/stuffed-jungle-animals.jpg" />
+          </li>
+          <li>
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/stuffed-chicken.jpg" />
+          </li>
+          <li>
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/stuffed-rabbit.jpg" />
+          </li>
+          <li>
+            <img src="<?php bloginfo( 'template_directory' ); ?>/img/soaps.jpg" />
+          </li>
+        </ul>
+      </div>
+      <script>
+        jQuery(window).load(function() {
+          jQuery('.flexslider').flexslider({
+            animation: "slide",
+            slideshow: false
+          });
+        });
+      </script>
+    </div>
+
+    <div class="association">
+      <p>Rêverie is a Member of the <a href="http://www.tnna.org" class="blue-text">National Needle Association</a></p>
+    </div>
 
   </main>
 </div>

@@ -2,12 +2,11 @@
 
       <h2>Explore Rêverie</h2>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About Us</a></li>
-        <li><a href="">Melissa</a></li>
-        <li><a href="">Alpacas</a></li>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about-us">About Us</a></li>
+        <li><a href="/melissa">Melissa</a></li>
         <li><a href="">Classes</a></li>
-        <li><a href="">Testimonials</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
         <li><a href="">Products</a></li>
         <li><a href="">Gallery</a></li>
         <li><a href="">Blog</a></li>

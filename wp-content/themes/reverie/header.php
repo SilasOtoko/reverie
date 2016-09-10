@@ -26,17 +26,16 @@
 					<div class="mobile-navigation">
 		        <h2>Menu</h2>
 		        <ul>
-		          <li><a href="">Home</a></li>
-		          <li><a href="/about-us">About Us</a></li>
-		          <li><a href="">Melissa</a></li>
-		          <li><a href="">Alpacas</a></li>
-		          <li><a href="">Classes</a></li>
-		          <li><a href="/testimonials">Testimonials</a></li>
-		          <li><a href="">Products</a></li>
-		          <li><a href="/gallery">Gallery</a></li>
-		          <li><a href="">Blog</a></li>
-		          <li><a href="">Contact Us</a></li>
-		        </ul>
+							<li><a href="/home">Home</a></li>
+							<li><a href="/about-us">About Us</a></li>
+							<li><a href="/melissa">Melissa</a></li>
+							<li><a href="">Classes</a></li>
+							<li><a href="/testimonials">Testimonials</a></li>
+							<li><a href="">Products</a></li>
+							<li><a href="">Gallery</a></li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Contact Us</a></li>
+						</ul>
 					</div>
 	      </nav>
 			</div>
