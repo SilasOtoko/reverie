@@ -478,6 +478,18 @@ footer .line {
 	background: #aad0ce;
 }
 
+.featured-products .flex-direction-nav a {
+	height: 40px;
+}
+
+.featured-products .flex-direction-nav .flex-next {
+	right: -30px;
+}
+
+.featured-products .flex-direction-nav .flex-prev {
+	left: -30px;
+}
+
 .association {
 	padding-top: 20px;
 }
@@ -521,18 +533,6 @@ footer .line {
 	.navigation-buttons .button {
 		width: 150px;
 		padding: 10px;
-	}
-
-	.featured-products .flex-direction-nav a {
-		height: 40px;
-	}
-
-	.featured-products .flex-direction-nav .flex-next {
-		right: -30px;
-	}
-
-	.featured-products .flex-direction-nav .flex-prev {
-		left: -30px;
 	}
 }
 
