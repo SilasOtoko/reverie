@@ -1,17 +1,19 @@
     <footer>
 
       <h2>Explore Rêverie</h2>
-      <ul>
-        <li><a href="/home">Home</a></li>
-        <li><a href="/about-us">About Us</a></li>
-        <li><a href="/melissa">Melissa</a></li>
-        <li><a href="">Classes</a></li>
-        <li><a href="/testimonials">Testimonials</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Contact Us</a></li>
-      </ul>
+      
+      <?php
+
+        $defaults = array(
+          'container' => false,
+          'div' => false,
+          'theme_location' => 'main-menu'
+        );
+
+        wp_nav_menu( $defaults );
+
+      ?>
+
       <span class="line"></span>
       <div class="social-icons">
         <a href="" class="footer-icon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/facebook-logo-white.svg"></a>

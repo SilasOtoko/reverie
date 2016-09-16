@@ -14,33 +14,37 @@
     <![endif]-->
 </head>
 <body>
-  <header class="main-header clearfix">
-		<a href="<?php bloginfo( 'url' ); ?>">
-			<img class="header-logo" src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogo.svg" alt="Reverie Logo">
-		</a>
-		<div id="mySidenav" class="sidenav">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <header>
+		<div class="main-header clearfix">
+			<a href="<?php bloginfo( 'url' ); ?>">
+				<img class="header-logo" src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogo.svg" alt="Reverie Logo">
+			</a>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-			<div id="sidebar">
-				<nav>
-					<div class="mobile-navigation">
-		        <h2>Menu</h2>
-		        <ul>
-							<li><a href="/home">Home</a></li>
-							<li><a href="/about-us">About Us</a></li>
-							<li><a href="/melissa">Melissa</a></li>
-							<li><a href="">Classes</a></li>
-							<li><a href="/testimonials">Testimonials</a></li>
-							<li><a href="">Products</a></li>
-							<li><a href="">Gallery</a></li>
-							<li><a href="">Blog</a></li>
-							<li><a href="">Contact Us</a></li>
-						</ul>
-					</div>
-	      </nav>
+				<div id="sidebar">
+					<nav>
+						<div class="mobile-navigation">
+							<h2>Menu</h2>
+							
+			        <?php
+
+								$defaults = array(
+									'container' => false,
+									'div' => false,
+									'theme_location' => 'main-menu'
+								);
+
+								wp_nav_menu( $defaults );
+
+							?>
+
+						</div>
+		      </nav>
+				</div>
 			</div>
-		</div>
 
-		<div onclick="openNav()" class="toggle-sidebar"><img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu.svg" alt="hamburger icon"></div>
+			<div onclick="openNav()" class="toggle-sidebar"><img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu.svg" alt="hamburger icon"></div>
+		</div>
 
 	</header>

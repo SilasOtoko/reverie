@@ -14,8 +14,8 @@ function register_theme_menus() {
 
   register_nav_menus(
     array(
-      'mobile-menu' => __( 'Mobile Menu' ),
-      'desktop-menu' => __( 'Desktop Menu' ),
+      'main-menu' => __( 'Main Menu' ),
+      'footer-menu' => __( 'Footer Menu' )
     )
   );
 }

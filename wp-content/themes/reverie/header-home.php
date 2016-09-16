@@ -16,7 +16,7 @@
 <body>
   <div class="home-landing">
 		<div class="home-landing-overlay">
-	    <header>
+	    <header class="home-header clearfix">
 				<div id="mySidenav" class="sidenav">
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -24,17 +24,19 @@
 						<nav>
 							<div class="mobile-navigation">
 				        <h2>Menu</h2>
-				        <ul>
-				          <li><a href="/home">Home</a></li>
-				          <li><a href="/about-us">About Us</a></li>
-				          <li><a href="/melissa">Melissa</a></li>
-				          <li><a href="">Classes</a></li>
-				          <li><a href="/testimonials">Testimonials</a></li>
-				          <li><a href="">Products</a></li>
-				          <li><a href="">Gallery</a></li>
-				          <li><a href="">Blog</a></li>
-				          <li><a href="">Contact Us</a></li>
-				        </ul>
+								
+								<?php
+
+			            $defaults = array(
+			              'container' => false,
+			              'div' => false,
+			              'theme_location' => 'main-menu'
+			            );
+
+			            wp_nav_menu( $defaults );
+
+			          ?>
+
 							</div>
 			      </nav>
 					</div>
