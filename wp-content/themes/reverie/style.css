@@ -126,7 +126,6 @@ input:focus {
 }
 
 .button {
-	height: 40px;
 	padding: 10px 20px;
 	border-radius: 10px;
 	font-family: 'Alegreya', serif;
@@ -158,6 +157,7 @@ input:focus {
 .button-medium {
 	padding: 5px 20px;
 	font-size: 1.125em;
+	height: 40px;
 }
 
 .button-wrapper:hover .button-medium {
@@ -653,6 +653,12 @@ footer .line {
 	padding: 20px;
 }
 
+.member h2 {
+	text-align: left;
+	margin-bottom: 16px;
+	margin-top: 0;
+}
+
 .member-photo {
 	width: 40%;
 	margin: 0 auto;
@@ -940,9 +946,14 @@ footer .line {
 	font-family: 'Alegreya', serif;
 	border-radius: 10px;
 	transition: all 0.2s;
+	min-height: 40px;
 }
 
-.navigation span a:hover {
+.navigation span {
+	display: inline-block;
+}
+
+.navigation span:hover a {
 	-webkit-box-shadow: 0 20px 20px -10px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 20px 20px -10px rgba(0,0,0,0.2);
   box-shadow: 0 20px 20px -10px rgba(0,0,0,0.2);

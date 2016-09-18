@@ -2,6 +2,10 @@
 
 add_theme_support( 'post-thumbnails');
 
+add_image_size( 'profile', 400, 400, true );
+
+add_image_size( 'large', 1200, 500, true );
+
 add_theme_support( 'menus' );
 
 if( function_exists('acf_add_options_page') ) {
