@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package mediafuel_starter
+ * @package reverie
  */
 
 get_header(); ?>

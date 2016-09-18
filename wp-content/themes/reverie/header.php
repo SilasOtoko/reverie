@@ -16,35 +16,37 @@
 <body>
   <header>
 		<div class="main-header clearfix">
-			<a href="<?php bloginfo( 'url' ); ?>">
-				<img class="header-logo" src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogo.svg" alt="Reverie Logo">
-			</a>
-			<div id="mySidenav" class="sidenav">
-				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<div class="main-header-wrapper clearfix">
+				<a href="<?php bloginfo( 'url' ); ?>">
+					<img class="header-logo" src="<?php bloginfo( 'template_directory' ); ?>/img/ReverieLogo.svg" alt="Reverie Logo">
+				</a>
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-				<div id="sidebar">
-					<nav>
-						<div class="mobile-navigation">
-							<h2>Menu</h2>
+					<div id="sidebar">
+						<nav>
+							<div class="mobile-navigation">
+								<h2>Menu</h2>
 
-			        <?php
+				        <?php
 
-								$defaults = array(
-									'container' => false,
-									'div' => false,
-									'theme_location' => 'main-menu'
-								);
+									$defaults = array(
+										'container' => false,
+										'div' => false,
+										'theme_location' => 'main-menu'
+									);
 
-								wp_nav_menu( $defaults );
+									wp_nav_menu( $defaults );
 
-							?>
+								?>
 
-						</div>
-		      </nav>
+							</div>
+			      </nav>
+					</div>
 				</div>
-			</div>
 
-			<div onclick="openNav()" class="toggle-sidebar"><img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu.svg" alt="hamburger icon"></div>
+				<div onclick="openNav()" class="toggle-sidebar"><img src="<?php bloginfo( 'template_directory' ); ?>/img/hamburger-menu.svg" alt="hamburger icon"></div>
+			</div>
 		</div>
 
 	</header>

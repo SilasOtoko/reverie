@@ -952,6 +952,14 @@ footer .line {
 }
 
 /************************
+# Product Page
+************************/
+
+#products-page .widget-container img {
+	border-radius: 10px;
+}
+
+/************************
 #Lightbox
 ************************/
 
