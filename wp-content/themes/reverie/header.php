@@ -26,7 +26,7 @@
 					<nav>
 						<div class="mobile-navigation">
 							<h2>Menu</h2>
-							
+
 			        <?php
 
 								$defaults = array(

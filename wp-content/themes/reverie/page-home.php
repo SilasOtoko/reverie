@@ -4,7 +4,7 @@
   <div class="main-wrapper clearfix">
     <h3>Sign up for our newsletter!</h3>
     <input type="email" placeholder="Email Address">
-    <input type="submit" value="Subscribe">
+    <input class="subscribe-button" type="submit" value="Subscribe">
   </div>
 </div>
 
