@@ -906,11 +906,29 @@ footer .line {
 	padding: 10px 0;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	margin-bottom: 20px;
 }
 
-.class-title h3 {
+.class-title h2,
+.class h4 {
 	margin-bottom: 10px;
+}
+
+.class-title h4 {
+	color: #fff;
+}
+
+.class-info {
+	text-align: left;
+	padding: 20px;
+}
+
+.class-info strong {
+	font-family: 'Alegreya', serif;
+	margin-right: 10px;
+}
+
+.class-info span {
+	display: block;
 }
 
 /*--------------------------------------------------------------
