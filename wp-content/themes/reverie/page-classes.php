@@ -28,24 +28,35 @@
         <h3>Upcoming Classes</h3>
         <div class="classes">
 
-          <?php if( have_rows( 'classes' ) ): ?>
+          <?php
 
-            <?php while( have_rows( 'classes' ) ): the_row(); ?>
+      	    $args = array(
+      	      'post_type' => 'class',
+      	      'orderby' => 'date',
+      	      'order' => 'ASC',
+      	    );
+      	    $query = new WP_Query( $args );
 
-              <div class="class">
+      	  ?>
+
+          <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
+
+            <div class="class">
+              <a href="<?php the_permalink(); ?>">
                 <div class="class-title">
-                  <h2><?php the_sub_field( 'class_title' ); ?></h2>
-                  <h4>Taught By <?php the_sub_field( 'instructor' ); ?></h4>
+                  <h2><?php the_field( 'class_title' ); ?></h2>
+                  <h4>Taught By <?php the_field( 'instructor' ); ?></h4>
                 </div>
                 <div class="class-info">
-                  <span><strong>Skill Level: </strong><?php the_sub_field( 'skill_level' ); ?></span>
-                  <span><strong>Dates: </strong><?php the_sub_field( 'dates' ); ?></span>
-                  <span><strong>Time: </strong><?php the_sub_field( 'time' ); ?></span>
-                  <span><strong>Cost: </strong><?php the_sub_field( 'cost' ); ?></span>
+                  <span><strong>Description: </strong><?php the_field( 'description' ); ?></span>
+                  <span><strong>Dates: </strong><?php the_field( 'dates' ); ?></span>
+                  <span><strong>Time: </strong><?php the_field( 'time' ); ?></span>
+                  <span><strong>Cost: </strong><?php the_field( 'cost' ); ?></span>
                 </div>
-              </div>
+              </a>
+            </div>
 
-            <?php endwhile; ?>
+          <?php endwhile; ?>
 
           <?php endif; ?>
 

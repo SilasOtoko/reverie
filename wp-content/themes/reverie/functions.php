@@ -16,6 +16,14 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
+add_action('init', 'init_remove_support',100);
+
+function init_remove_support(){
+    $post_type = 'class';
+    remove_post_type_support( $post_type, 'editor');
+}
+
+
 function register_theme_menus() {
 
   register_nav_menus(
