@@ -13,7 +13,7 @@
       </script>
     <![endif]-->
 </head>
-<body>
+<body <?php body_class(); ?>>
   <header>
 		<div class="main-header clearfix">
 			<div class="main-header-wrapper clearfix">

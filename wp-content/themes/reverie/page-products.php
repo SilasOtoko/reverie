@@ -24,17 +24,23 @@
       </div>
 
       <div class="main-content">
+        <div class="products">
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <?php if( have_rows('product_categories') ): ?>
 
-          <?php the_content(); ?>
+          <?php while( have_rows('product_categories') ): the_row(); ?>
 
-        <?php endwhile; else : ?>
+            <h3><?php the_sub_field( 'category_name' ); ?></h3>
 
-          <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <div class="product">
+              <?php the_sub_field( 'products' ); ?>
+            </div>
 
-        <?php endif; ?>
+          <?php endwhile; ?>
 
+          <?php endif; ?>
+          
+        </div>
       </div>
 
     </main>
