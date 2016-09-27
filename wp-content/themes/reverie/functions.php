@@ -2,6 +2,8 @@
 
 add_theme_support( 'post-thumbnails');
 
+add_image_size( 'medium-small', 600, 400, true );
+
 add_image_size( 'profile', 400, 400, true );
 
 add_image_size( 'large', 1200, 500, true );

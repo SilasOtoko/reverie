@@ -31,4 +31,9 @@ jQuery(document).ready(function($){
   $overlay.click(function(){
     $overlay.hide();
   });
+
+  //re-enable map zoom on click
+  $('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+  });
 });

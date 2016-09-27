@@ -8,7 +8,15 @@
 
 <div id="products-page">
 
-  <div class="banner"></div>
+  <?php
+    $banner = wp_get_attachment_image_src ( get_field( 'banner_image' ), 'banner' );
+  ?>
+
+  <?php if( $banner ): ?>
+    <div class="banner" style="background-image: url(<?php echo $banner[0]; ?>"></div>
+  <?php else: ?>
+    <div class="banner"></div>
+  <?php endif; ?>
 
   <div class="content-area">
     <main>
@@ -39,7 +47,7 @@
           <?php endwhile; ?>
 
           <?php endif; ?>
-          
+
         </div>
       </div>
 
