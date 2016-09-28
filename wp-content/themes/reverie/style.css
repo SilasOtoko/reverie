@@ -1076,6 +1076,50 @@ footer .line {
 	text-align: center;
 }
 
+.woocommerce ul.products li.product a img {
+	border-radius: 10px;
+}
+
+#product-page {
+	padding-top: 40px;
+}
+
+#product-page img {
+	border-radius: 10px;
+}
+
+p.woocommerce-result-count {
+	display: none;
+}
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.woocommerce-info {
+	border-top-color: #aad0ce;
+}
+
+.woocommerce-info a {
+	color: #aad0ce;
+	font-weight: 700;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	background-color: #aad0ce;
+}
+
+.woocommerce-info:before {
+	color: #aad0ce;
+}
+
+.wc_payment_methods .about_paypal {
+	color: #aad0ce;
+	font-weight: 700;
+}
+
 /*--------------------------------------------------------------
 # Contact Page
 --------------------------------------------------------------*/

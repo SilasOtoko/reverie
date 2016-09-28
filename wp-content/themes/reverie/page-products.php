@@ -22,7 +22,7 @@
     <main>
 
       <div class="page-title">
-        <h1>Products</h1>
+        <h1><?php the_title(); ?></h1>
         <div class="fancy-underline">
           <span class="line"></span>
           <img class="fancy-swirl" src="<?php bloginfo( 'template_directory' ); ?>/img/art.svg" alt="fancy swirl">
