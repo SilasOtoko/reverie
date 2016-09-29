@@ -22,10 +22,17 @@
     <p>Rêverie is a yarn, décor & gifts shop located in the heart of the vibrant arts community of downtown Goshen. We also offer classes for those who want to learn!</p>
 
     <div class="navigation-buttons">
-      <a class="button button-blue" href="">Products</a>
-      <a class="button button-blue" href="">Classes</a>
-      <a class="button button-blue" href="">Gallery</a>
-      <a class="button button-blue" href="/about-us">Meet Us</a>
+
+      <?php if( have_rows('navigation_links') ): ?>
+
+        <?php while( have_rows('navigation_links') ): the_row(); ?>
+
+          <a class="button button-blue" href="<?php the_sub_field( 'page_link' ); ?>"><?php the_sub_field( 'link_text' ); ?></a>
+
+        <?php endwhile; ?>
+
+      <?php endif; ?>
+
     </div>
 
     <div class="tagline">
