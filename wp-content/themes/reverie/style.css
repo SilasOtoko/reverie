@@ -200,7 +200,7 @@ input:focus {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 12em;
+	padding: 12em 0;
 }
 
 /* Home Header */
@@ -641,6 +641,8 @@ footer .line {
 #about-page .banner {
 	max-width: 980px;
 	margin: 0 auto;
+	background-image: none;
+	padding: 0;
 }
 
 #about-page .banner img {
@@ -701,9 +703,17 @@ footer .line {
 	#about-page .banner {
 		margin-top: 0;
 	}
+
+	#about-page .banner img {
+		border-radius: 0;
+	}
 }
 
 @media (max-width: 767px) {
+	.member h2 {
+		text-align: center;
+	}
+
 	.member-photo {
 		float: none;
 		margin-bottom: 20px;
@@ -744,7 +754,7 @@ footer .line {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 12em;
+	padding: 12em 0;
 }
 
 #melissa-page .main-content {
@@ -784,7 +794,7 @@ footer .line {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 12em;
+	padding: 12em 0;
 }
 
 .testimonials {
@@ -1092,10 +1102,18 @@ p.woocommerce-result-count {
 	display: none;
 }
 
-.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
 	border-radius: 10px;
 	border: 1px solid #ccc;
 	padding: 10px;
+}
+
+.woocommerce .select2-choice {
+	height: 45px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	padding-top: 4px;
 }
 
 .woocommerce-info {

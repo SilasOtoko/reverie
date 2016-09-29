@@ -6,8 +6,6 @@
 
 <?php if( $banner ): ?>
   <div class="banner" style="background-image: url(<?php echo $banner[0]; ?>"></div>
-<?php else: ?>
-  <div class="banner"></div>
 <?php endif; ?>
 
 <div id="product-page" class="content-area">
