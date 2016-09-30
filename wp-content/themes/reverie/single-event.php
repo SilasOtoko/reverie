@@ -15,8 +15,6 @@ get_header(); ?>
 
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-					<?php the_content(); ?>
-
 	        <div class="page-title">
 		        <h1><?php the_title(); ?></h1>
 		        <div class="fancy-underline">
@@ -26,6 +24,8 @@ get_header(); ?>
 		        </div>
 						<h4></h4>
 		      </div>
+
+					<?php the_content(); ?>
 
 	      <?php endwhile; else : ?>
 

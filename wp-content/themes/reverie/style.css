@@ -203,6 +203,12 @@ input:focus {
 	padding: 12em 0;
 }
 
+@media (max-width: 980px) {
+	.banner {
+		padding: 8em;
+	}
+}
+
 /* Home Header */
 
 .home-header {
@@ -415,6 +421,10 @@ footer .line {
 # Main Content Area
 --------------------------------------------------------------*/
 
+.page-title h3 {
+	color: #959595;
+}
+
 .content-area {
 	padding: 0 5%;
 	min-height: 50vh;
@@ -543,6 +553,14 @@ footer .line {
 	margin: 0 auto;
 	margin-bottom: 40px;
 	border: 0;
+}
+
+.featured-products .flex-viewport {
+	border-radius: 10px;
+}
+
+.featured-products img {
+	border-radius: 10px;
 }
 
 .featured-products .flex-direction-nav a:before {
@@ -754,7 +772,6 @@ footer .line {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	padding: 12em 0;
 }
 
 #melissa-page .main-content {
@@ -782,6 +799,12 @@ footer .line {
 	margin-top: 20px;
 	font-size: 1.625em;
 	font-family: 'Alegreya', serif;
+}
+
+@media (max-width: 580px) {
+	.melissa-photo {
+		width: 80%;
+	}
 }
 
 /*--------------------------------------------------------------

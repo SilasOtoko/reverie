@@ -18,7 +18,7 @@
         <img class="fancy-swirl" src="<?php bloginfo( 'template_directory' ); ?>/img/art.svg" alt="fancy swirl">
         <span class="line"></span>
       </div>
-      <!-- <h3>Each of these ladies is a specialist in their respective interest</h3> -->
+      <h3><?php the_field( 'page_subtitle' ); ?></h3>
     </div>
 
     <?php
