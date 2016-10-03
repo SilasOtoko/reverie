@@ -1,7 +1,7 @@
     <footer>
 
       <h2>Explore Rêverie</h2>
-      
+
       <?php
 
         $defaults = array(
@@ -16,10 +16,29 @@
 
       <span class="line"></span>
       <div class="social-icons">
-        <a href="" class="footer-icon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/facebook-logo-white.svg"></a>
-        <a href="" class="footer-icon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/ravelry-logo-white.svg"></a>
-        <a href="" class="footer-icon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/twitter-logo-white.svg"></a>
-        <a href="" class="footer-icon"><img src="<?php bloginfo( 'template_directory' ); ?>/img/pinterest-logo-white.svg"></a>
+
+        <?php if( have_rows('social_icons', 'options') ): ?>
+
+          <?php while( have_rows('social_icons', 'options') ): the_row(); ?>
+
+            <?php
+
+              $image = get_sub_field('social_logo', 'options');
+              $size = 'small-icon';
+              $src = $image['url'];
+              $alt = $image['alt'];
+              $thumb = $image['sizes'][ $size ];
+
+            if( $image ): ?>
+
+              <a href="<?php the_sub_field( 'social_link', 'options' ); ?>" class="footer-icon"><img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>"></a>
+
+            <?php endif; ?>
+
+          <?php endwhile; ?>
+
+        <?php endif; ?>
+
       </div>
       <div class="legal">
         <h4>© Copyright 2016 Rêverie</h4>

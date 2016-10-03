@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
   $('body').append($overlay);
 
   //capture click event
-  $('.lightbox-link').click(function(){
+  $('.lightbox-link').click(function(event){
     event.preventDefault();
     var imageLocation = $(this).attr('href');
     $image.attr("src", imageLocation);

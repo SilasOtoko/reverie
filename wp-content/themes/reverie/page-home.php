@@ -41,20 +41,34 @@
     </div>
 
     <div class="featured-products">
+      <h2>See some of our products</h2>
       <div class="flexslider">
         <ul class="slides">
-          <li>
-            <img src="<?php bloginfo( 'template_directory' ); ?>/img/stuffed-jungle-animals.jpg" />
-          </li>
-          <li>
-            <img src="<?php bloginfo( 'template_directory' ); ?>/img/stuffed-chicken.jpg" />
-          </li>
-          <li>
-            <img src="<?php bloginfo( 'template_directory' ); ?>/img/stuffed-rabbit.jpg" />
-          </li>
-          <li>
-            <img src="<?php bloginfo( 'template_directory' ); ?>/img/soaps.jpg" />
-          </li>
+
+          <?php if( have_rows( 'featured_products' ) ): ?>
+
+            <?php while( have_rows( 'featured_products' ) ): the_row(); ?>
+
+              <?php
+
+                $image = get_sub_field('featured_product');
+                $size = 'medium-small';
+                $src = $image['url'];
+                $alt = $image['alt'];
+                $thumb = $image['sizes'][ $size ];
+
+              if( $image ): ?>
+
+                <li>
+                  <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>">
+                </li>
+
+              <?php endif; ?>
+
+            <?php endwhile; ?>
+
+          <?php endif; ?>
+
         </ul>
       </div>
       <script>
