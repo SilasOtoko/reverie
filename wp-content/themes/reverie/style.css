@@ -249,10 +249,15 @@ input:focus {
 /* Navigation */
 
 .toggle-sidebar {
-	width: 30px;
+	width: 100px;
 	float: right;
 	vertical-align: center;
 	margin-top: 10px;
+}
+
+.toggle-sidebar span {
+	display: inline-block;
+	color: #fff;
 }
 
 /* The side navigation menu */
@@ -465,10 +470,41 @@ footer .line {
 	text-align: center;
 }
 
+.subscribe .nf-form-title {
+	display: none;
+}
+
+.subscribe .nf-form-fields-required {
+	display: none;
+}
+
+.subscribe label {
+	display: none;
+}
+
+.subscribe nf-field {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+
+.subscribe .nf-field-container {
+	margin-bottom: 0;
+}
+
+.subscribe-form {
+	display: inline-block;
+}
+
+.subscribe .form-group {
+	display: inline-block;
+}
+
 .subscribe h3 {
 	color: #fff;
 	display: inline-block;
 	margin: 0 10% 0 0;
+	vertical-align: top;
 }
 
 .subscribe input {
@@ -487,13 +523,10 @@ footer .line {
 	font-style: italic;
 }
 
-.subscribe input[type="submit"] {
-	background-color: #7c7877;
-	color: #fff;
-}
-
 .subscribe-button {
 	animation: shake 5s linear 2s infinite;
+	background-color: #7c7877;
+	color: #fff;
 }
 
 @keyframes shake {
@@ -883,6 +916,12 @@ footer .line {
 # Gallery Page
 --------------------------------------------------------------*/
 
+.gallery-intro {
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto 40px;
+}
+
 .gallery-image-wrapper {
 	width: 24.5%;
 	border-radius: 10px;
@@ -1161,6 +1200,21 @@ p.woocommerce-result-count {
 }
 
 .wc_payment_methods .about_paypal {
+	color: #aad0ce;
+	font-weight: 700;
+}
+
+.sku_wrapper {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.posted_in a {
+	color: #aad0ce;
+	font-weight: 700;
+}
+
+.reset_variations {
 	color: #aad0ce;
 	font-weight: 700;
 }
