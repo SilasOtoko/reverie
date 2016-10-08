@@ -32,6 +32,7 @@
       </div>
 
       <div class="main-content">
+
         <div class="products">
 
           <?php if( have_rows('product_categories') ): ?>
@@ -56,4 +57,5 @@
 
 </div>
 
+<?php get_sidebar( 'product_sidebar' ); ?>
 <?php get_footer(); ?>

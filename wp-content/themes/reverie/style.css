@@ -1148,8 +1148,52 @@ footer .line {
 	border-radius: 10px;
 }
 
+.widget-area {
+	width: 30%;
+	border: 2px solid #959595;
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+	margin-right: 2%;
+	border-radius: 5px;
+}
+
 .products {
 	text-align: center;
+}
+
+.products-section {
+	width: 67%;
+	display: inline-block;
+}
+
+#woocommerce-product-search-field {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-right: 5px;
+  padding: 5px;
+	margin-bottom: 20px;
+}
+
+.woocommerce-product-search input[type="submit"] {
+  border-radius: 10px;
+  border: 0;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: 'Alegreya', serif;
+  background-color: #aad0ce;
+}
+
+.woocommerce .widget_product_categories .widget-title {
+	font-size: 2em;
+}
+
+.product-categories li {
+	list-style: none;
+}
+
+.product-categories li a {
+	color: #5ba4a1;
 }
 
 .woocommerce ul.products li.product a img {

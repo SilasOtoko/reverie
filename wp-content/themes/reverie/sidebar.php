@@ -7,11 +7,11 @@
  * @package mediafuel_starter
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'product_sidebar' ) ) {
 	return;
 }
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<?php dynamic_sidebar( 'product_sidebar' ); ?>
 </aside><!-- #secondary -->
