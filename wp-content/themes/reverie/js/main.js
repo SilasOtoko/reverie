@@ -36,4 +36,15 @@ jQuery(document).ready(function($){
   $('.maps').click(function () {
     $('.maps iframe').css("pointer-events", "auto");
   });
+
+  //accordion
+  var acc = document.getElementsByClassName("sidebar-toggle");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+      }
+  }
 });

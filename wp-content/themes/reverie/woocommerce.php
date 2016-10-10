@@ -12,15 +12,18 @@
 
   <?php if ( is_active_sidebar( 'product_sidebar' ) ) : ?>
     <div id="secondary" class="widget-area" role="complementary">
-      <?php dynamic_sidebar( 'product_sidebar' ); ?>
+      <div class="sidebar-toggle">Filter Results <span class="plus-symbol">✚</span></div>
+      <div class="sidebar-content">
+        <?php dynamic_sidebar( 'product_sidebar' ); ?>
+      </div>
     </div>
   <?php endif; ?>
 
-  <main class="products-section">
+  <div class="products-section">
 
     <?php woocommerce_content(); ?>
 
-  </main>
+  </div>
 
 </div>
 

@@ -1148,14 +1148,41 @@ footer .line {
 	border-radius: 10px;
 }
 
+.sidebar-toggle {
+	display: none;
+}
+
+.orderby {
+	border: 1px solid #959595;
+	background-color: #fff;
+	padding: 5px 10px;
+	margin-bottom: 20px;
+	-webkit-appearance:none;
+  -moz-appearance:none;
+  -ms-appearance:none;
+  appearance:none;
+	background: url('img/gray-arrow-down.svg') no-repeat right;
+	height: 40px;
+	color: #666;
+}
+
+.orderby:focus {
+	outline: none;
+}
+
 .widget-area {
 	width: 30%;
-	border: 2px solid #959595;
+	border: 1px solid #959595;
 	display: inline-block;
 	padding: 20px;
 	vertical-align: top;
 	margin-right: 2%;
 	border-radius: 5px;
+	margin-bottom: 40px;
+}
+
+.widget-area h1 {
+	font-size: 2em;
 }
 
 .products {
@@ -1165,6 +1192,24 @@ footer .line {
 .products-section {
 	width: 67%;
 	display: inline-block;
+	padding-top: 0;
+}
+
+.woocommerce-product-search {
+	border-bottom: 1px solid #959595;
+	margin-bottom: 40px;
+}
+
+.widget_shopping_cart {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #959595;
+	padding-bottom: 20px;
+}
+
+.widget_price_filter {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #959595;
+	padding-bottom: 20px;
 }
 
 #woocommerce-product-search-field {
@@ -1186,6 +1231,14 @@ footer .line {
 
 .woocommerce .widget_product_categories .widget-title {
 	font-size: 2em;
+}
+
+.product-categories {
+	padding-left: 20px;
+}
+
+.product-categories ul {
+	padding-left: 20px;
 }
 
 .product-categories li {
@@ -1261,6 +1314,49 @@ p.woocommerce-result-count {
 .reset_variations {
 	color: #aad0ce;
 	font-weight: 700;
+}
+
+@media (max-width: 1040px) {
+	.widget-area {
+		width: 40%;
+		margin-right: 3%;
+	}
+
+	.products-section {
+		width: 55%;
+	}
+}
+
+@media (max-width: 768px) {
+	.widget-area {
+		width: 100%;
+	}
+
+	.sidebar-toggle {
+		display: block;
+	}
+
+	.plus-symbol {
+		color: #aad0ce;
+		float: right;
+	}
+
+	.sidebar-content {
+		display: none;
+	}
+
+	.products-section {
+		width: 100%;
+	}
+
+	.widget_shopping_cart {
+		display: none;
+	}
+
+	.sidebar-content.show {
+		display: block;
+		margin-top: 40px;
+	}
 }
 
 /*--------------------------------------------------------------
