@@ -64,6 +64,9 @@ function remove_editor_init() {
        remove_post_type_support( 'page', 'editor' );
        // Other features can also be removed in addition to the editor. See: https://codex.wordpress.org/Function_Reference/remove_post_type_support.
     }
+    else if (  'page-about.php' === $template_file ) {
+       remove_post_type_support( 'page', 'editor' );
+    }
   }
 }
 

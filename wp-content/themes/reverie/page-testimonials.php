@@ -33,43 +33,36 @@
 
       <div class="main-content">
 
+        <div class="gallery-intro">
+
+          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <?php the_content(); ?>
+
+          <?php endwhile; ?>
+
+          <?php endif; ?>
+
+        </div>
+
         <div class="testimonials clearfix">
 
-          <div class="testimony clearfix">
+          <?php if( have_rows('testimonials') ): ?>
 
-            <i class="fa fa-quote-left fa"></i>
+            <?php while( have_rows('testimonials') ): the_row(); ?>
 
-            <p>I recently took a needle felting class here, and it was amazing! Love the shop and all the people we came in contact with were so sweet and friendly! We will most definitely be coming back!</p>
-            <p>- Kelly Sanford Provo</p>
+              <div class="testimony clearfix">
 
-          </div>
+                <i class="fa fa-quote-left fa"></i>
 
-          <div class="testimony clearfix">
+                <div><?php the_sub_field( 'testimonial' ); ?></div>
+                <div>- <?php the_sub_field( 'author' ); ?></div>
 
-            <i class="fa fa-quote-left fa"></i>
+              </div>
 
-            <p>I love Reverie! Their customer service is awesome! They also have beautiful gift items as well as being a full service yarn shop!!</p>
-            <p>- Elizabeth Sohrab</p>
+            <?php endwhile; ?>
 
-          </div>
-
-          <div class="testimony clearfix">
-
-            <i class="fa fa-quote-left fa"></i>
-
-            <p>Quite possibly the nicest yarn shop I have ever been to. Lovely selection, lovely owners and super friendly! About an hour drive, but I will be going back!</p>
-            <p>- Lisa L Kage</p>
-
-          </div>
-
-          <div class="testimony clearfix">
-
-            <i class="fa fa-quote-left fa"></i>
-
-            <p>I recently took a needle felting class here, and it was amazing! Love the shop and all the people we came in contact with were so sweet and friendly! We will most definitely be coming back!</p>
-            <p>- Kelly Sanford Provo</p>
-
-          </div>
+          <?php endif; ?>
 
         </div>
       </div>
