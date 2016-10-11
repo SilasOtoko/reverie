@@ -1105,6 +1105,26 @@ footer .line {
 	background-color: #eee;
 }
 
+#single-class-page .em-booking-form-details textarea {
+	border: 1px solid #959595;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+#single-class-page .em-booking-buttons input {
+	background-color: #7c7877;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 20px;
+	color: #fff;
+}
+
+#single-class-page .em-booking-form-details {
+	background-color: #aad0ce;
+	border-radius: 10px;
+	padding: 20px;
+}
+
 @media (max-width: 767px) {
 	.class {
 		width: 100%;
