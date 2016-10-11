@@ -1316,6 +1316,10 @@ p.woocommerce-result-count {
 	font-weight: 700;
 }
 
+.products-section a {
+	pointer-events: none;
+}
+
 @media (max-width: 1040px) {
 	.widget-area {
 		width: 40%;
