@@ -1125,6 +1125,10 @@ footer .line {
 	padding: 20px;
 }
 
+#single-class-page .em-ticket-select {
+	background-color: #fff;
+}
+
 @media (max-width: 767px) {
 	.class {
 		width: 100%;
