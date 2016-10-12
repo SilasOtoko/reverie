@@ -1365,7 +1365,7 @@ p.woocommerce-result-count {
 	font-weight: 700;
 }
 
-.products-section a {
+.products-section .thumbnails a {
 	pointer-events: none;
 }
 
